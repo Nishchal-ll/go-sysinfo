@@ -33,8 +33,9 @@ A lightweight, zero-dependency Linux system information CLI written in Go from s
 - [ ] Graceful error handling (handling non-Linux environments and permission restrictions).
 
 ### Phase 5: Build, Packaging & Distribution
-- [ ] Multi-architecture builds (`amd64`, `arm64`).
+- [x] Multi-architecture builds (`amd64`).
+- [x] Debian / Ubuntu `.deb` packaging script (`scripts/build-deb.sh`).
 - [ ] GitHub Actions CI workflow (linting, tests, build verification).
-- [ ] Packaging with **GoReleaser** / **nfpm** to build `.deb` packages.
-- [ ] Publish GitHub Release with pre-built binaries and install script.
-- [ ] Polished `README.md` with badges, demo GIF, and install instructions.
+- [ ] Packaging with **GoReleaser** for automated GitHub release assets.
+- [ ] Publish GitHub Release with pre-built binaries.
+- [x] Polished `README.md` with badges, instructions, and architecture breakdown.

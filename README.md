@@ -49,12 +49,25 @@ Usage:       269.50 GB / 467.35 GB (57.7% used)
 
 ## 🚀 Quick Start & Installation
 
-### Option 1: Run with Go
+### Option 1: Install Debian / Ubuntu Package (`.deb`)
+You can build and install the native `.deb` package on Ubuntu or Debian:
+```bash
+# Build the package
+./scripts/build-deb.sh
+
+# Install onto your system
+sudo dpkg -i dist/go-sysinfo_0.1.0_amd64.deb
+
+# Run anywhere from your terminal
+sysinfo
+```
+
+### Option 2: Run with Go
 ```bash
 go run main.go
 ```
 
-### Option 2: Build Executable Binary
+### Option 3: Build Executable Binary
 ```bash
 # Compile binary
 go build -o sysinfo main.go
@@ -63,7 +76,7 @@ go build -o sysinfo main.go
 ./sysinfo
 ```
 
-### Option 3: Install Globally
+### Option 4: Install Globally with Go
 ```bash
 go install github.com/Nishchal-ll/go-sysinfo@latest
 ```
